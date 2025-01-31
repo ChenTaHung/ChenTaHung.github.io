@@ -63,6 +63,33 @@
             color: #fff;
             margin-top: 2rem;
         }
+        .core-competencies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .core-category {
+            background: #f0f8ff;
+            border-left: 5px solid #0074d9;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .core-category:hover {
+            transform: scale(1.02);
+        }
+
+        .core-category h3 {
+            margin-top: 0;
+            color: #0074d9;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+       
     </style>
 </head>
 <body>
@@ -80,12 +107,32 @@
         </section>
         <section class="section">
             <h2 style="text-align:center;">Core Competencies</h2>
-            <ul>
-                <li><b>Programming Languages & Tools:</b> Python, R, SQL, SAS, Scikit-learn, PyTorch, Git, Tableau, Spark, XGBoost, Plotly</li>
-                <li><b>Machine Learning Techniques:</b> Supervised Learning, Clustering, Deep Learning, Bayesian Modeling</li>
-                <li><b>Data Analysis Skills:</b> Statistical Inference, Time Series Analysis, ETL, Data Pipeline</li>
-                <li><b>Advanced Techniques:</b> Feature Engineering, Web Crawling, Visualization, Algorithm Development, Optimization, Operation Research</li>
-            </ul>
+            <div class="core-competencies">
+                <div class="core-category">
+                    <h3>Programming & Development</h3>
+                    <p>Python, R, SQL, Git, PyTorch, Spark, SAS, Tableau, Plotly</p>
+                </div>
+                <div class="core-category">
+                    <h3>Machine Learning & AI</h3>
+                    <p>Scikit-learn, XGBoost, Deep Learning, Large Language Models (LLMs), Clustering, Optimization, Linear & Nonlinear Programming</p>
+                </div>
+                <div class="core-category">
+                    <h3>Statistical & Data Science Techniques</h3>
+                    <p>Statistical Modeling, Bayesian Statistics, Time Series Analysis, Data Analytics, Data Wrangling, A/B Testing, Data Modeling</p>
+                </div>
+                <div class="core-category">
+                    <h3>Data Engineering & Processing</h3>
+                    <p>ETL Data Pipelines, Database Management, Feature Engineering, Big Data Processing</p>
+                </div>
+                <div class="core-category">
+                    <h3>Business, Risk & Decision Analytics</h3>
+                    <p>Credit Risk Modeling, Stress Testing, Financial Forecasting, Operations Research, Monte Carlo Simulation, Markov Chain Monte Carlo</p>
+                </div>
+                <div class="core-category">
+                    <h3>Soft Skills & Leadership</h3>
+                    <p>Problem-Solving, Communication, Project Management, Collaboration, Adaptability</p>
+                </div>
+            </div>
         </section>
         <section class="section">
             <h2 style="text-align:center;">Professional Experiences</h2>
@@ -101,10 +148,11 @@
                 <li>Enhanced performance through advanced chunking and prompting techniques.</li>
             </ul>
             <h3>PwC</h3>
-            <p><em>Senior Associate (July 2022 – May 2023)</em></p>
+            <p><em>Senior Associate (July 2020 – May 2023)</em></p>
             <ul>
-                <li>Designed credit scorecards for loan products, optimizing risk assessment processes.</li>
-                <li>Developed a monotone optimal binning algorithm, reducing project timelines significantly.</li>
+                <li>Led the development of credit risk scorecards for loan products, optimizing risk assessment processes and improving financial risk management.</li>
+                <li>Designed and implemented risk-based pricing strategies and approval processes to enhance profitability while mitigating loan default risks.</li>
+                <li>Developed a monotone optimal binning algorithm, significantly reducing project timelines by 75%.</li>
             </ul>
         </section>        
         <section class="section">
@@ -123,10 +171,10 @@
         </section>
         
         <section class="section">
-            <h2 style="text-align:center;">Educations</h2>
+            <h2 style="text-align:center;">Education</h2>
             <p>
-                <strong>Master of Science in Applied Statistics</strong>, Boston University (2023–2025)
-                <li>Graduate Teaching Assistant - MA678 Applied Statistical Modeling</li>
+                <strong>Master of Science in Applied Statistics</strong>, Boston University (Graduated January 2025)
+                <li>Graduate Teaching Assistant -               MA678 Applied Statistical Modeling</li>
             </p>
             <p>
                 <strong>Bachelor of Business Administration in Finance</strong>, National Central University, Taiwan (2016–2020)
